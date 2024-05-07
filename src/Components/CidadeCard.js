@@ -51,7 +51,7 @@ const CidadeDetalhes = styled.h4`
     margin: 0;
 `;
 
-const CidadeDias = styled.h4`
+const CidadeDias = styled.input`
 color: var(--material-theme-sys-light-on-primary-container, #201047);
 text-align: center;
 
@@ -72,6 +72,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 0;
+
+border: none;
 `;
 
 const Separacao = styled.div`
@@ -86,7 +88,7 @@ background-color: #CAC4CF;
 
 `
 
-const CidadeCard = ({ cidadeNome, cidadeDetalhes, cidadeDias }) => {
+const CidadeCard = ({ cidadeNome, cidadeDetalhes, cidadeDias,onDaysChange }) => {
     return (
       <div style={{display:"flex",flexDirection:"column", justifyContent:"center", alignItems:"center", width:"max-content", gap:"5px ", padding:"5px 0"}}>
           <Card>
@@ -102,9 +104,12 @@ const CidadeCard = ({ cidadeNome, cidadeDetalhes, cidadeDias }) => {
                   </CidadeDetalhes>
               </div>
               <div>
-                  <CidadeDias>
-                      {cidadeDias}
-                  </CidadeDias>
+              <CidadeDias 
+                    as="input"
+                    type="number" 
+                    value={cidadeDias} 
+                    onChange={(e) => onDaysChange(cidadeNome, e.target.value)} 
+                />
                   <CidadeDetalhes style={{textAlign:"center"}}>
                       Dias
                   </CidadeDetalhes>
