@@ -4,8 +4,12 @@ import CidadeCard from "./CidadeCard";
 import AddCidades from "./AddCidades";
 import CidadesSearch from "./CidadesSearch";
 import RespondeGrid from "./RespondeGrid";
+import { CircularProgress } from '@material-ui/core'; // Importa o componente de carregamento
+
 
 function CidadeMenuLista() {
+
+  const [isLoading, setIsLoading] = useState(false); // Adiciona um estado para o carregamento
 
   const [apiData, setApiData] = useState(null); // Adiciona um estado para os dados da API
 
@@ -33,6 +37,7 @@ function CidadeMenuLista() {
   };
 
   const AddCidadesHandler = async () => {
+    setIsLoading(true);
     const newCityData = {
         "Local_Partida": "São Paulo",
         "Cidades_Visita": [...cidadeNomes],
@@ -57,20 +62,22 @@ function CidadeMenuLista() {
     }
 
     console.log(data); // This will log the data from the API to the console
+    setIsLoading(false);
     };
 
   return (
     <div className="App">
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          width: "90vw",
-          margin: "auto",
-          padding: "30px 0",
-        }}
-      >
+      {isLoading ? <CircularProgress /> : ( // Renderiza o ícone de carregamento se isLoading for true
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: "90vw",
+            margin: "auto",
+            padding: "30px 0",
+          }}
+        >
         <CidadesSearch onAddCity={addCity} />
         {cidadeNomes.length > 0 &&
           cidadeDetalhes.length > 0 &&
@@ -98,6 +105,7 @@ function CidadeMenuLista() {
           </button>
         )}
       </div>
+      )}
       {apiData && <RespondeGrid data={apiData} />}
     </div>
   );

@@ -2,7 +2,7 @@ import Fundo from '../Assets/Fundo.svg'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: 666px;
+    height: 50vw;
     width: 100vw;
 `
 
