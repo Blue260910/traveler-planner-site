@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url(./Assets/FundoCompleto.svg);
+  background-color: #0C1223;
+  background-repeat: no-repeat;
+  background-position: top;
+}

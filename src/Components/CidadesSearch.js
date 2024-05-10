@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useLoadScript } from '@react-google-maps/api';
+import React, { useState, useEffect } from "react";
+import { useLoadScript } from "@react-google-maps/api";
 
 const libraries = ["places"];
 
@@ -14,23 +14,31 @@ function CidadesSearch({ onAddCity }) {
 
   useEffect(() => {
     if (isLoaded) {
-      const autocompleteInput = document.getElementById('autocomplete');
+      const autocompleteInput = document.getElementById("autocomplete");
       if (!autocompleteInput) {
         console.error("Couldn't find element with id 'autocomplete'");
         return;
       }
 
-      const autocomplete = new window.google.maps.places.Autocomplete(autocompleteInput, {
-        types: ['(cities)'],
-        fields: ['name', 'address_component']
-      });
-      autocomplete.addListener('place_changed', () => {
+      const autocomplete = new window.google.maps.places.Autocomplete(
+        autocompleteInput,
+        {
+          types: ["(cities)"],
+          fields: ["name", "address_component"],
+        }
+      );
+      autocomplete.addListener("place_changed", () => {
         const place = autocomplete.getPlace();
-        const countryComponent = place.address_components.find(component => component.types.includes('country'));
+        const countryComponent = place.address_components.find((component) =>
+          component.types.includes("country")
+        );
         const country = countryComponent ? countryComponent.long_name : null;
-      
-        setCities(prevCities => [...prevCities, { name: place.name, country }]);
-      
+
+        setCities((prevCities) => [
+          ...prevCities,
+          { name: place.name, country },
+        ]);
+
         if (onAddCity) {
           onAddCity(place.name, country);
         } else {
@@ -55,7 +63,19 @@ function CidadesSearch({ onAddCity }) {
         type="text"
         placeholder="Search City"
         value={input}
-        onChange={e => setInput(e.target.value)}
+        onChange={(e) => setInput(e.target.value)}
+        style={{
+          width: "384px",
+          backgroundColor: "#BEE9FF",
+          padding: "30px 10px",
+          fontSize: "1rem",
+          border: "none",
+          borderRadius: "0.5rem",
+          fontFamily: "Roboto",
+          color: "#000000",
+          border: "2px solid #126682",
+          placeholder : "Search City" 
+        }}
       />
     </div>
   );

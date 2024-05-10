@@ -13,7 +13,7 @@ height: 24px;
 flex-shrink: 0;
 
 border-radius: 12px;
-background: var(--material-theme-sys-light-primary-container, #E9DDFF);
+background: var(--material-theme-sys-light-primary-container, #BEE9FF);
 
 /* M3/Elevation Light/3 */
 box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);

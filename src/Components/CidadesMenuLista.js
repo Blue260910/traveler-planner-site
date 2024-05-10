@@ -3,8 +3,12 @@ import styled from "styled-components";
 import CidadeCard from "./CidadeCard";
 import AddCidades from "./AddCidades";
 import CidadesSearch from "./CidadesSearch";
+import RespondeGrid from "./RespondeGrid";
 
 function CidadeMenuLista() {
+
+  const [apiData, setApiData] = useState(null); // Adiciona um estado para os dados da API
+
   const [cidadeNomes, setCidadeNomes] = useState([
     "Paris",
   ]);
@@ -47,6 +51,7 @@ function CidadeMenuLista() {
     let data;
     try {
         data = await response.json();
+        setApiData(data); // Armazena os dados da API no estado
     } catch (e) {
         console.error('The response is not valid JSON:', e);
     }
@@ -61,7 +66,9 @@ function CidadeMenuLista() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          width: "max-content",
+          width: "90vw",
+          margin: "auto",
+          padding: "30px 0",
         }}
       >
         <CidadesSearch onAddCity={addCity} />
@@ -91,6 +98,7 @@ function CidadeMenuLista() {
           </button>
         )}
       </div>
+      {apiData && <RespondeGrid data={apiData} />}
     </div>
   );
 }

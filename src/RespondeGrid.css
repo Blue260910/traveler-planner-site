@@ -1,0 +1,51 @@
+.grid-container {
+  width: 90%;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  color: #333; /* Altere para a cor desejada */
+}
+
+.grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grid-table th, .grid-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #333; /* Altere para a cor desejada */
+}
+
+.grid-table th {
+  background-color: #BEE9FF;
+  color: #001F2A;
+}
+
+.city-name {
+  border-bottom: 1px solid #ddd;
+  color: #e2a573; /* Altere para a cor desejada */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-title {
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+  color: #8cd5e2; /* Altere para a cor desejada */
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+  color: #d9e6ec; /* Altere para a cor desejada */
+  font-weight:600;
+}
