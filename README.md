@@ -1,5 +1,8 @@
 # Traveler Planner Site
 
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/14847c73-8f7f-4ba8-91a1-aaa949400d1f)
+
+
 ## Introdução
 
 O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, criado para auxiliar no planejamento de roteiros de viagens. O objetivo principal é oferecer uma ferramenta completa e intuitiva que facilite a organização de cada etapa da sua aventura, desde a pesquisa de destinos até a reserva de hotéis e voos.
@@ -14,8 +17,14 @@ O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, 
 - Suporte da Alura: Tire suas dúvidas e receba suporte técnico da equipe da Alura.
 
 ## Demonstração
+# Insira seus destinos e quantidade de dias
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/90fb0b20-da69-4af6-b663-2bc14dfc6539)
 
-[Insira um link para a demonstração do Traveler Planner Site aqui]
+# Receba um Cronograma completo com a rota otimizada, dicas de atividades, acomodações e restaurantes para aproveitar!
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/e5f32fb8-c732-471b-ae8a-e177a2453ce7)
+
+
+
 
 ## Pré-requisitos
 
