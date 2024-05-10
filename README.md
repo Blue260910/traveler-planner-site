@@ -5,16 +5,13 @@
 
 ## Introdução
 
-O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, criado para auxiliar no planejamento de roteiros de viagens. O objetivo principal é oferecer uma ferramenta completa e intuitiva que facilite a organização de cada etapa da sua aventura, desde a pesquisa de destinos até a reserva de hotéis e voos.
+O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, criado para auxiliar no planejamento de roteiros de viagens. O objetivo principal é oferecer uma ferramenta completa e intuitiva que facilite a organização de cada etapa da sua aventura.
 
 ## Funcionalidades
 
 - Pesquisa de destinos: Explore diferentes destinos pelo mundo, filtrando por país, região, tipo de viagem e interesses.
 - Criação de roteiros personalizados: Organize seus dias de viagem, incluindo atrações, restaurantes, passeios e outras atividades.
-- Reserva de hotéis e voos: Compare preços e encontre as melhores ofertas de hospedagem e transporte aéreo.
-- Gerenciamento de orçamento: Controle seus gastos durante a viagem com um sistema de orçamento detalhado.
 - Integração com Gemini: Acesse e utilize seus cartões Gemini diretamente no Traveler Planner Site.
-- Suporte da Alura: Tire suas dúvidas e receba suporte técnico da equipe da Alura.
 
 ## Demonstração
 # Insira seus destinos e quantidade de dias
@@ -22,9 +19,6 @@ O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, 
 
 # Receba um Cronograma completo com a rota otimizada, dicas de atividades, acomodações e restaurantes para aproveitar!
 ![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/e5f32fb8-c732-471b-ae8a-e177a2453ce7)
-
-
-
 
 ## Pré-requisitos
 
@@ -34,7 +28,7 @@ O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, 
 
 ## Como usar
 
-1. Acesse o site do Traveler Planner Site: xxxx
+1. Acesse o site do Traveler Planner Site
 2. Crie um novo roteiro de viagem
 3. Utilize as funcionalidades do site para planejar sua viagem
 4. Aproveite sua viagem!
@@ -55,13 +49,9 @@ MIT. Veja o arquivo LICENSE no repositório GitHub do projeto.
 
 O Traveler Planner Site está em constante desenvolvimento. A equipe trabalha para melhorar a experiência do usuário.
 
-## Contato
-
-[endereço de e-mail removido]
-
 ## Agradecimentos
 
-A equipe agradece à Alura e aos usuários que contribuíram com o projeto.
+A equipe agradece à Alura.
 
 Esperamos que você aproveite o Traveler Planner Site para planejar suas próximas viagens!
 
