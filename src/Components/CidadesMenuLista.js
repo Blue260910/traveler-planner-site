@@ -4,7 +4,7 @@ import CidadeCard from "./CidadeCard";
 import AddCidades from "./AddCidades";
 import CidadesSearch from "./CidadesSearch";
 import RespondeGrid from "./RespondeGrid";
-import { CircularProgress } from '@material-ui/core'; // Importa o componente de carregamento
+import { CircularProgress } from '@mui/material'; // Importa o componente de carregamento
 
 
 function CidadeMenuLista() {

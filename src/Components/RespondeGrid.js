@@ -2,7 +2,11 @@ import React from "react";
 import "../RespondeGrid.css";
 
 
-const RespondeGrid = ({ data }) => (
+const RespondeGrid = ({ data }) => {
+  // Verifique se data é um array antes de tentar mapeá-lo
+  const dataArray = Array.isArray(data) ? data : [];
+
+  return (
     <div className="grid-container">
       <table className="grid-table">
         <thead>
@@ -12,7 +16,7 @@ const RespondeGrid = ({ data }) => (
           </tr>
         </thead>
         <tbody>
-          {data && data.map((city, index) => (
+          {dataArray.map((city, index) => (
             <tr key={index}>
               <td>
                 <h3 className="city-name">{city.nome_da_cidade}</h3>
@@ -44,6 +48,6 @@ const RespondeGrid = ({ data }) => (
       </table>
     </div>
   );
+};
   
 export default RespondeGrid;
-
