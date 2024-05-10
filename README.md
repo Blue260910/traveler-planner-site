@@ -1,3 +1,62 @@
+# Traveler Planner Site
+
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/14847c73-8f7f-4ba8-91a1-aaa949400d1f)
+
+
+## Introdução
+
+O Traveler Planner Site é um projeto integrado ao Gemini com o apoio da Alura, criado para auxiliar no planejamento de roteiros de viagens. O objetivo principal é oferecer uma ferramenta completa e intuitiva que facilite a organização de cada etapa da sua aventura.
+
+## Funcionalidades
+
+- Pesquisa de destinos: Explore diferentes destinos pelo mundo, filtrando por país, região, tipo de viagem e interesses.
+- Criação de roteiros personalizados: Organize seus dias de viagem, incluindo atrações, restaurantes, passeios e outras atividades.
+- Integração com Gemini: Acesse e utilize seus cartões Gemini diretamente no Traveler Planner Site.
+
+## Demonstração
+# Insira seus destinos e quantidade de dias
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/90fb0b20-da69-4af6-b663-2bc14dfc6539)
+
+# Receba um Cronograma completo com a rota otimizada, dicas de atividades, acomodações e restaurantes para aproveitar!
+![image](https://github.com/Blue260910/traveler-planner-site/assets/84590776/e5f32fb8-c732-471b-ae8a-e177a2453ce7)
+
+## Pré-requisitos
+
+- Conta Gemini
+- Navegador web atualizado
+- Acesso à internet
+
+## Como usar
+
+1. Acesse o site do Traveler Planner Site
+2. Crie um novo roteiro de viagem
+3. Utilize as funcionalidades do site para planejar sua viagem
+4. Aproveite sua viagem!
+
+## Contribuindo
+
+O Traveler Planner Site é um projeto de código aberto. Veja como contribuir:
+
+- Reportando bugs
+- Sugerindo novas funcionalidades
+- Contribuindo com o código
+
+## Licença
+
+MIT. Veja o arquivo LICENSE no repositório GitHub do projeto.
+
+## Status do Projeto
+
+O Traveler Planner Site está em constante desenvolvimento. A equipe trabalha para melhorar a experiência do usuário.
+
+## Agradecimentos
+
+A equipe agradece à Alura.
+
+Esperamos que você aproveite o Traveler Planner Site para planejar suas próximas viagens!
+
+---
+
 # Getting Started with Create React App and Flask Server
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and includes a Flask server.
